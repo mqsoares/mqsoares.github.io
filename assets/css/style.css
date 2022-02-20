@@ -11,69 +11,62 @@ body {
     font-size: 100%;
     background-color: #151515;
     font-family: 'Montserrat', sans-serif;
+    color: #FFF;
 }
 
 .container {
     max-width: 1070px;
     margin: auto;
-    color: #FFF;
 }
 
-.cabecalho {
+.header {
     display: flex;
     justify-content: flex-end;
     padding: 32px 50px;
 }
 
-.cabecalho-menu {
+.header-menu {
     display: flex;
     gap: 50px;
 }
 
-.cabecalho-menu-item {
+.header-menu-item {
     font-weight: 400;
     font-size: 17px;
     color: #FFF
 }
 
-.conteudo {
+.content {
     border-top: 0.1px solid #81818144;
 }
 
-.conteudo-principal {
+.content-main {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin-top: 48px;
     padding: 0px 50px;
-
 }
 
-.conteudo-principal-escrito {
+.content-main-written {
     display: flex;
     flex-direction: column;
     gap: 22px;
 }
 
-.conteudo-principal-escrito {
-   display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
-
-.conteudo-principal-escrito-titulo {
+.content-main-written-title {
     font-weight: 700;
     font-size: 48px;
 }
 
-.conteudo-principal-escrito-subtitulo {
+.content-main-written-subtitle {
     font-weight:400;
     font-size: 24px;
     color: #818181
 }
 
-.conteudo-principal-escrito-botao {
+.content-main-written-button {
     width: 180px;
     height: 60px;
     border: none;
@@ -84,23 +77,21 @@ body {
     cursor: pointer;
 }
 
-.conteudo-principal-imagem {
+.content-main-image {
     height: 370px;
     border-radius: 50%;
 }
 
-.conteudo-secundario {
+.content-secondary {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin: 48px;
-    
-    /* padding: 50px; */
+    margin: 48px;   
     text-align: center;
 }
 
-.conteudo-secundario-titulo {
+.content-secondary-title {
     border-top: 0.1px solid #81818144;
     padding-top: 48px;
     font-weight: 400;
@@ -108,13 +99,13 @@ body {
     margin-bottom: 16px;
 }
 
-.conteudo-secundario-paragrafo {
+.content-secondary-paragraph {
     font-weight: 400;
     font-size: 17px;
     color: #818181;
 }
 
-.rodape {
+.footer {
     border-top: 0.1px solid #81818144;
     padding: 32px;
     display: flex;
@@ -123,12 +114,12 @@ body {
     gap: 5px;
 }
 
-.rodape-conteudo {
+.footer-content {
     font-weight: 400;
     font-size: 17px;
 }
 
-.rodape-conteudo-email {
+.footer-content-email {
     font-weight: 400;
     font-size: 17px;
     color: #66d4ff71;
