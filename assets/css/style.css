@@ -33,7 +33,13 @@ body {
 .header-menu-item {
     font-weight: 400;
     font-size: 17px;
-    color: #FFF
+    color: #FFF;
+    transition: transform 100ms linear;
+}
+
+.header-menu-item:hover {
+    color: #ff7c00;
+    transform: scale(1.08);
 }
 
 .content {
@@ -75,6 +81,12 @@ body {
     border-radius: 30px;
     color: #FFF;
     cursor: pointer;
+    transition: transform 100ms linear;
+}
+
+.content-main-written-button:hover {
+    background-image: linear-gradient(90deg, #ff7c00, #3c1d00);
+    transform: scale(1.08);
 }
 
 .content-main-image {
@@ -123,4 +135,10 @@ body {
     font-weight: 400;
     font-size: 17px;
     color: #66d4ff71;
+    transition: transform 100ms linear;
+}
+
+.footer-content-email:hover {
+    color: #ff7c00;
+    transform: scale(1.02);
 }
