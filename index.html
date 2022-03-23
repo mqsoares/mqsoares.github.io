@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Miquéias Soares, Desenvolvedor Web | Front-end">
     <title>Miquéias Soares - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="assets/fonts/style.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <section class="main-container">
         <header class="header">
             <nav class="header-container">
-                <a href="#home"><img class="header-logo" src="assets/img/logo.png" alt="logo do desenvolvedor"></a>
+                <a href="#home"><img class="logo" src="assets/img/logo.png" alt="logo do desenvolvedor"></a>
                 <div class="header-menu">
                     <ul>
                         <li><a href="#home" class="header-menu-item">INÍCIO</a></li>
@@ -24,16 +25,19 @@
                 </div>
             </nav>
         </header>
+
         <main class="content">
             <section class="content-main" id="home">
                 <div class="content-main-written">
                     <h1 class="content-main-written-title">Miquéias Soares</h1>
                     <h2 class="content-main-written-subtitle">Desenvolvedor Web / Front-end</h2>
-                    <button class="content-main-written-button">DOWNLOAD CV</button> 
+                    <button class="button">DOWNLOAD CV</button> 
                 </div>                
                 <img class="content-main-image" src="assets/img/mq-seraos.jpg" alt="imagem do desenvolver web Miqueias Soares">
             </section>
-            <div class="divider-1"></div>            
+
+            <div class="divider-1"></div>
+
             <section class="about" id="about"> 
                 <h3 class="about-title">SOBRE</h3> 
                 <div class="content-about">                                       
@@ -42,7 +46,9 @@
                     <p class="about-paragraph">Meu trabalho está diretamente ligado à experiência do usuário, desenvolvo interfaces de sites, assegurando que os elementos gráficos do site fiquem semelhantes aos que foram projetados pelo designer, cuidando de todos os elementos visuais contidos na página e deixando-os totalmente responsivos, ou seja, idependente do tamanho da tela do usuário, o site vai se redimensionar para que assim o usuário consiga ter uma boa experiência de uso.</p>
                 </div>
             </section>
+
             <div class="divider-2"></div>
+
             <section class="skkils" id="skills">
                 <h3 class="skkils-title">SKILLS</h3>
                 <p class="skkils-paragraph">Tecnologias</p>
@@ -58,7 +64,7 @@
                         <p>CSS (Cascading Style Sheets) são folhas de estilo em cascata. linguagem que complementa e formata o HTML, Com ele, podemos modificar praticamente tudo dentro do layout (Cores, background, margens, preenchimentos e etc.).</p>
                     </div>
                     <div class="card">
-                        <img class="skkils-card-item-js" src="assets/img/js.png" alt="logo javascript">
+                        <img class="skkils-card-item" src="assets/img/js.png" alt="logo javascript">
                         <h3>JavaScript</h3>
                         <p>É uma das mais importantes tecnologias voltadas para o front-end, unindo-se ao HTML e CSS, abrangem praticamente todas as exigências do desenvolvimento de uma página completa, dinâmica e com boa performance.</p>
                     </div>
@@ -74,20 +80,42 @@
                     </div>                    
                 </div>
             </section>
+
             <div class="divider-1"></div>
+
             <section class="project" id="project">
                 <h3 class="project-title">PROJETOS</h3> 
+                <i class="icon-github">xxxxxxxxx</i>
                 <p class="project-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio tenetur nostrum dolorem reiciendis cum, porro ab asperiores minus, maxime delectus voluptatibus eius sed doloremque id ea consequuntur? Corrupti, dignissimos.</p>
             </section>
+
             <div class="divider-2"></div>
+            
             <section class="contact" id="contact">
-                <h2 class="contact-title">CONTATOS</h2> 
-                <p class="contact-paragraph"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque neque quas excepturi laborum aspernatur magnam, corporis, aliquam illo illum voluptates exercitationem non minima, dolore molestiae! Ipsum nesciunt asperiores illum laboriosam!</p>
+                <h3 class="contact-title">Entre em contato com comigo!</h3>                   
+                <div class="contact-container">
+                    <div class="contact-text">
+                        <p class="contact-paragraph"> Quero tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+                        <a href="https://api.whatsapp.com/send?phone=+5583996532700text=Oi! Gostaria de saber mais sobre seu trabalho como desenvolvedor." target="_blank"><button class="button" ><i class="icon-whatsapp"></i> ENTRAR EM CONTATO</button></a>
+                    </div>        
+                    <div class="contact-links">
+                        <ul>                            
+                            <li><a href="https://www.linkedin.com/in/mq-soares" target="_blank"><i class="icon-linkedin">   </i>LinkedIn</a></li>
+                            <li><a href="https://twitter.com/mqsoares" target="_blank"><i class="icon-twitter">     </i>Twitter</a></li>
+                            <li><a href="mailto:mqseraos@gmail.com" target="_blank"><i class="icon-envelop">    </i>mqseraos@gmail.com</a></li>
+                        </ul>
+                    </div>                
+                </div>                
             </section>
+
         </main>
-        <footer class="footer">
-            <h3 class="footer-content">Precisando de um Des. Web?</h3>
-            <a class="footer-content-email" href="mailto:mqseraos@gmail.com">Vamos trabalhar juntos, me mande uma mensagem.</a> 
+
+        <footer class="footer">        
+            <div class="footer-text">
+                <p>©2022 Miquéias Soares.</p>
+                <p>Todos os direitos reservados.</p>
+                <i class="icon-mobile"></i>83 99653-2700
+            </div>        
         </footer>
     </section>
 </body>
