@@ -7,10 +7,11 @@
     <meta name="description" content="Miquéias Soares, Desenvolvedor Web | Front-end">
     <title>Miquéias Soares - Desenvolvedor Web</title>
     <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <section class="main-container">
+    <div class="main-container">
         <header class="header">
             <nav class="header-container">
                 <a href="#home"><img class="logo" src="assets/img/logo.png" alt="logo do desenvolvedor"></a>
@@ -51,41 +52,53 @@
 
             <section class="skkils" id="skills">
                 <h3 class="skkils-title">SKILLS</h3>
-                <p class="skkils-paragraph">Tecnologias</p>
-                <div class="skkils-cards">
-                    <div class="card">
-                        <img class="skkils-card-item" src="assets/img/html.png" alt="logo html">
-                        <h3>HTML</h3>
-                        <p>HTML (HyperText Markup Language) "Linguagem de Marcação de Hipertexto". Consiste em uma linguagem de marcação utilizada para produção de páginas na web.</p>
+                <p class="skkils-paragraph">Aqui estão as tecnologias que tenho contato no momento.</p>
+                <div class="swiper">
+                    <div class="skkils-cards swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <img class="skkils-card-item" src="assets/img/html.png" alt="logo html">
+                            <h3>HTML</h3>
+                            <p>HTML (HyperText Markup Language) "Linguagem de Marcação de Hipertexto". Linguagem de marcação utilizada para produção de páginas na web.</p>
+                        </div>
+                        <div class="card swiper-slide" >
+                            <img class="skkils-card-item" src="assets/img/css.png" alt="logo css">
+                            <h3>CSS</h3>
+                            <p>CSS (Cascading Style Sheets) Com ele, podemos modificar praticamente tudo dentro do layout (Cores, background, margens, preenchimentos e etc.).</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img class="skkils-card-item" src="assets/img/js.png" alt="logo javascript">
+                            <h3>JavaScript</h3>
+                            <p>Unindo-se ao HTML e CSS, abrangem praticamente todas as exigências do desenvolvimento de uma página completa, dinâmica e com boa performance.</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img class="skkils-card-item" src="assets/img/react.png" alt="logo css">
+                            <h3>React</h3>
+                            <p>Biblioteca front-end, seu funcionamento acontece através do que chamamos de componente.<br> <strong>OBS.</strong> Iniciando os estudos nessa "ferramenta".</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <img class="skkils-logos-item" src="assets/img/git.png" alt="logo css">
+                            <h3>Git</h3>
+                            <p>Sistema de Controle de versão. Caso haja algum problema em uma alteração do código-fonte, é possível restaurar a versão anterior de forma fácil e rápida.</p>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="skkils-card-item" src="assets/img/css.png" alt="logo css">
-                        <h3>CSS</h3>
-                        <p>CSS (Cascading Style Sheets) são folhas de estilo em cascata. linguagem que complementa e formata o HTML, Com ele, podemos modificar praticamente tudo dentro do layout (Cores, background, margens, preenchimentos e etc.).</p>
-                    </div>
-                    <div class="card">
-                        <img class="skkils-card-item" src="assets/img/js.png" alt="logo javascript">
-                        <h3>JavaScript</h3>
-                        <p>É uma das mais importantes tecnologias voltadas para o front-end, unindo-se ao HTML e CSS, abrangem praticamente todas as exigências do desenvolvimento de uma página completa, dinâmica e com boa performance.</p>
-                    </div>
-                    <div class="card">
-                        <img class="skkils-card-item" src="assets/img/react.png" alt="logo css">
-                        <h3>React</h3>
-                        <p>É uma biblioteca front-end e tem como um de seus objetivos facilitar a conexão entre diferentes partes de uma página, portanto seu funcionamento acontece através do que chamamos de componente.<br> <strong>OBS.</strong> Iniciando os estudos nessa "ferramenta".</p>
-                    </div>
-                    <div class="card">
-                        <img class="skkils-logos-item" src="assets/img/git.png" alt="logo css">
-                        <h3>Git</h3>
-                        <p>É um Sistema de Controle de versão que evita que alterações realizadas em um projeto modifiquem o código-fonte. Assim, caso haja algum problema em uma alteração do código-fonte, é possível restaurar a versão anterior de forma fácil e rápida.</p>
-                    </div>                    
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
             <div class="divider-1"></div>
 
             <section class="project" id="project">
-                <h3 class="project-title">PROJETOS</h3> 
-                <i class="icon-github">xxxxxxxxx</i>
+                <h3 class="project-title">PROJETOS</h3>
+                <div class="project-gh">
+                    <p class="project-paragraph"> Alguns dos meus projetos você pode conferir no meu repositório do GitHub, basta acessar o link abaixo.</p>
+                    <div class="contact-links">
+                        <ul>                            
+                            <li><a href="https://github.com/mqsoares" target="_blank"><i class="icon-github">    </i>   </i>GitHub</a></li>                            
+                        </ul>
+                    </div>        
+                </div>
+                    
+               
                 <p class="project-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio tenetur nostrum dolorem reiciendis cum, porro ab asperiores minus, maxime delectus voluptatibus eius sed doloremque id ea consequuntur? Corrupti, dignissimos.</p>
             </section>
 
@@ -112,11 +125,13 @@
 
         <footer class="footer">        
             <div class="footer-text">
-                <p>©2022 Miquéias Soares.</p>
-                <p>Todos os direitos reservados.</p>
-                <i class="icon-mobile"></i>83 99653-2700
+                <p>Todos os direitos reservados - ©2022 MQseraoS .</p>
+                <i class="icon-mobile">    </i>83 99653-2700
             </div>        
         </footer>
-    </section>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
