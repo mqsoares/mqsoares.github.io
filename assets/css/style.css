@@ -182,47 +182,39 @@ h3 {
     padding-top: 30px;
 }
 
-.skkils-cards {    
-    display: flex;
-    gap: 25px;
-}
-
-.card {
+.card blockquote {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 32px;
     gap: 20px;
-                
+    cursor: pointer;
+    
     border-radius: 20px;
-    box-shadow: 0px 0px 15px #000;
     border-bottom: 2px solid #ff7c00;
-    background-color: #181818;    
+    background-color: #181818;
+    box-shadow: 0px 0px 15px #000;
 }
 
 .card p {
     color: #818181;
     line-height: 28px;
 }
-.swiper {
-    padding: 35px 15px 70px;
-}
+
 .swiper-slide {
-    max-width: 302px;
-    height: auto;
+  height: auto;
+  padding: 50px 16px;
 }
 
 .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
     background: #fff;
-}
-
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 10px;
 }
 
 .swiper-pagination-bullet-active {
     background: #ff7c00;
-}
+} 
 
 .project {
     display: flex;

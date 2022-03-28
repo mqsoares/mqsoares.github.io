@@ -1,12 +1,18 @@
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     setWrapperSize: true,
     pagination: {
         el: '.swiper-pagination',
     },
     mousewheel: true,
     keyboard: true,
-});
+    breakpoints: {
+        775: {
+          slidesPerView: 2,
+          setWrapperSize: true
+        }
+    }
+})
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
