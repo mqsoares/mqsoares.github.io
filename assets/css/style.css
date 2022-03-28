@@ -19,7 +19,11 @@ html {
     scroll-behavior: smooth;
 }
 
-h3 {
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3, i {
     font-weight:400;
 }
 
@@ -64,7 +68,7 @@ h3 {
 
 .header-menu ul {
     display: flex;
-    gap: 28px;
+    gap: 12px;
 }
 
 .header-menu-item {
@@ -75,6 +79,7 @@ h3 {
     list-style: none;
     transition: color 0.2s;
     position: relative;
+    padding: 10px;
 }
 
 .header-menu-item:hover {
@@ -220,7 +225,6 @@ h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    text-align: center;
     padding: 100px 50px;     
 }
 
@@ -243,9 +247,6 @@ h3 {
     flex-direction: column;
     gap: 20px;
 }
-.project-gh .contact-links ul li a {
-    color: #fff;
-} 
 
 .contact {
     padding: 100px 50px;    
@@ -306,8 +307,6 @@ h3 {
     color: #818181;    
 }
 
-
-
 /****** RESPONSIVE ******/
 
 @media (max-width: 880px) {
@@ -330,7 +329,14 @@ h3 {
     .content-main-written {
         margin-top: 20px;
         align-items: center;
-    }  
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+        gap: 40px;
+    }    
 }
 
 @media (max-width: 480px) {
