@@ -82,8 +82,7 @@ h3, i {
     padding: 10px;
 }
 
-.header-menu-item:hover,
-.header-menu-item.active {
+.header-menu-item:hover {
     color: #ff7c00;
 }
 
@@ -354,6 +353,12 @@ h3, i {
 }
 
 /****** RESPONSIVE ******/
+@media (max-width: 1030px) {
+    .card blockquote {
+        max-height: 462px;
+        height: 100%;
+    }
+}
 
 @media (max-width: 880px) {
     .content-main-written-title {
@@ -391,8 +396,7 @@ h3, i {
         width: 100vw;
         top: 0px;
         left: 0;
-        background-color: #151515;
-              
+        background-color: #151515;              
     }   
 
     .header-container.active .header-menu ul {
@@ -425,6 +429,13 @@ h3, i {
         padding-top: 20px;
         gap: 40px;
     }    
+}
+
+@media (max-width: 650px) {
+    .card blockquote {
+        max-height: 550px;
+        height: 100%;
+    }
 }
 
 @media (max-width: 480px) {
