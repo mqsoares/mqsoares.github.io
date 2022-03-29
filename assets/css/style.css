@@ -82,8 +82,13 @@ h3, i {
     padding: 10px;
 }
 
-.header-menu-item:hover {
+.header-menu-item:hover,
+.header-menu-item.active {
     color: #ff7c00;
+}
+
+.header-menu-item.active {
+    font-weight: 700;
 }
 
 .header-menu-item::after {
@@ -97,8 +102,21 @@ h3, i {
     transition: width 0.2s;
 }
 
-.header-menu-item:hover::after {
+.header-menu-item:hover::after,
+.header-menu-item.active::after {
     width: 100%;
+}
+
+.toggle {
+    display: none;
+    color: #818181;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.toggle:hover {
+    color: #ff7c00;
 }
 
 .content-main {
@@ -307,6 +325,34 @@ h3, i {
     color: #818181;    
 }
 
+.back-to-top {
+    background: #212121;
+    color: #818181;
+    box-shadow: 0px 0px 10px #000;
+  
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+  
+    padding: 8px;
+    clip-path: circle();
+  
+    font-size: 16px;
+    line-height: 0;
+  
+    visibility: hidden;
+    opacity: 0;
+  
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+  
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /****** RESPONSIVE ******/
 
 @media (max-width: 880px) {
@@ -319,9 +365,51 @@ h3, i {
 }
 
 @media (max-width: 800px) {
-    .header {
-        justify-content: center;
+    .header-menu-item::after {
+        height: 2px;
+        bottom: -8px;
     }
+
+    .toggle {
+        display: block;
+    }
+    
+    nav .icon-close {
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .header-container.active .header-menu .icon-close {
+        display: block;         
+    }
+  
+    .header-menu ul {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0px;
+        left: 0;
+        background-color: #151515;
+              
+    }   
+
+    .header-container.active .header-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 48px;
+        place-content: center;        
+    }
+
+    .header-menu-item {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
+
     .content-main {
         flex-direction: column-reverse;
     }
