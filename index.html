@@ -11,110 +11,117 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="main-container">
-        <header class="header">
-            <nav class="header-container">
-                <a href="#home"><img class="logo" src="assets/img/logo.png" alt="logo do desenvolvedor"></a>
-                <div class="header-menu">
-                    <div class="icon-menu toggle"></div>
-                    <div class="icon-close toggle"></div>
-                    <ul>
-                        <li><a href="#home" class="header-menu-item">INÍCIO</a></li>
-                        <li><a href="#about" class="header-menu-item">SOBRE</a></li>
-                        <li><a href="#skills" class="header-menu-item">SKILLS</a></li>
-                        <li><a href="#project" class="header-menu-item">PROJETOS</a></li>
-                        <li><a href="#contact" class="header-menu-item">CONTATOS</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <header class="header">
+        <nav class="header-container container">
+            <a href="#home"><img class="logo" src="assets/img/logo.png" alt="logo do desenvolvedor"></a>
+            <div class="header-menu">
+                <div class="icon-menu toggle"></div>
+                <div class="icon-close toggle"></div>
+                <ul>
+                    <li><a href="#home" class="header-menu-item">INÍCIO</a></li>
+                    <li><a href="#about" class="header-menu-item">SOBRE</a></li>
+                    <li><a href="#skills" class="header-menu-item">SKILLS</a></li>
+                    <li><a href="#project" class="header-menu-item">PROJETOS</a></li>
+                    <li><a href="#contact" class="header-menu-item">CONTATOS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <main class="content">
-            <section class="content-main" id="home">
-                <div class="content-main-written">
-                    <h1 class="content-main-written-title">Miquéias Soares</h1>
-                    <h2 class="content-main-written-subtitle">Desenvolvedor Web / Front-end</h2>
-                    <button class="button">DOWNLOAD CV</button> 
-                </div>                
-                <img class="content-main-image" src="assets/img/mq-seraos.jpg" alt="imagem do desenvolver web Miqueias Soares">
-            </section>
+    <main class="content">
+        <section class="home" id="home">
+            <div class="home-written container">
+                <h1 class="home-title">Miquéias Soares</h1>
+                <h2 class="home-subtitle">Desenvolvedor Web / Front-end</h2>
+                <button class="button">DOWNLOAD CV</button> 
+            </div>                    
+        </section>
+        
+        <div class="divider-1"></div>
 
-            <div class="divider-1"></div>
-
-            <section class="about" id="about"> 
-                <h3 class="about-title">SOBRE</h3> 
-                <div class="content-about">                                       
-                    <p class="about-paragraph">Desenvolvedor Web / Front End, graduando no Curso Superior de Tecnologia em Desenvolvimento Web pela UNOPAR - Universidade Norte do Paraná.</p>                                        
-                    <p class="about-paragraph">Após dez anos trabalhando com administração de empresas no ramo óptico e alguns anos de barbearia, decidi fazer transição de carreira para a área de TI. Toda experiência acumulada ao longo desses anos contribuiu para desenvolver e fortalecer minhas soft skills, além de propocionar um melhor aproveitamento na evolução das hard skills.</p>
-                    <p class="about-paragraph">Meu trabalho está diretamente ligado à experiência do usuário, desenvolvo interfaces de sites, assegurando que os elementos gráficos do site fiquem semelhantes aos que foram projetados pelo designer, cuidando de todos os elementos visuais contidos na página e deixando-os totalmente responsivos, ou seja, idependente do tamanho da tela do usuário, o site vai se redimensionar para que assim o usuário consiga ter uma boa experiência de uso.</p>
-                </div>
-            </section>
-
-            <div class="divider-2"></div>
-
-            <section class="skkils" id="skills">
-                <h3 class="skkils-title">SKILLS</h3>
-                <p class="skkils-paragraph">Aqui estão as tecnologias que tenho contato no momento.</p>
-                <div class="swiper"> 
-                    <div class="skkils-cards swiper-wrapper">
-                        <div class="card swiper-slide">
-                            <blockquote>
-                                <img class="skkils-card-item" src="assets/img/html.png" alt="logo html">
-                                <h3>HTML</h3>
-                                <p>HTML (HyperText Markup Language) "Linguagem de Marcação de Hipertexto". Linguagem de marcação utilizada para produção de páginas na web.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card swiper-slide">
-                            <blockquote>
-                                <img class="skkils-card-item" src="assets/img/css.png" alt="logo css">
-                                <h3>CSS</h3>
-                                <p>CSS (Cascading Style Sheets) Com ele, podemos modificar praticamente tudo dentro do layout (Cores, background, margens, preenchimentos e etc.).</p>
-                                </blockquote>
-                        </div>
-                        <div class="card swiper-slide">
-                            <blockquote>
-                                <img class="skkils-card-item" src="assets/img/js.png" alt="logo javascript">
-                                <h3>JavaScript</h3>
-                                <p>Unindo-se ao HTML e CSS, abrangem praticamente todas as exigências do desenvolvimento de uma página completa, dinâmica e com boa performance.</p>
-                            </blockquote>
-                        </div>
-                        <div class="card swiper-slide">
-                            <blockquote>
-                                <img class="skkils-card-item" src="assets/img/react.png" alt="logo css">
-                                <h3>React</h3>
-                                <p>Biblioteca front-end, seu funcionamento acontece através do que chamamos de componente.<br> <strong>OBS.</strong> Iniciando os estudos nessa "ferramenta".</p>
-                            </blockquote>
-                        </div>
-                        <div class="card swiper-slide">
-                            <blockquote>
-                                <img class="skkils-logos-item" src="assets/img/git.png" alt="logo css">
-                                <h3>Git</h3>
-                                <p>Sistema de Controle de versão. Caso haja algum problema em uma alteração do código-fonte, é possível restaurar a versão anterior de forma fácil e rápida.</p>
-                            </blockquote>
-                        </div>
+        <section class="about container-content" id="about">
+            <h3 class="title">SOBRE</h3> 
+            <div class="container">
+                <div class="content-about">
+                    <img class="about-image" src="assets/img/mq-seraos.jpg" alt="imagem do desenvolver web Miqueias Soares">
+                    <div class="about-write">
+                        <p class="about-paragraph">Desenvolvedor Web graduando no Curso Superior de Tecnologia em Desenvolvimento Web pela UNOPAR - Universidade Norte do Paraná.</p>
+                        <br>
+                        
+                        <p class="about-paragraph">Após dez anos trabalhando com administração de empresas no ramo óptico e alguns anos de barbearia, decidi fazer transição de carreira para a área de TI. Toda experiência acumulada ao longo desses anos contribuiu para desenvolver e fortalecer minhas soft skills, além de propocionar um melhor aproveitamento na evolução das hard skills.</p>
+                        <br>
+                        <p class="about-paragraph">Meu trabalho está diretamente ligado à experiência do usuário, desenvolvo interfaces de sites, assegurando que os elementos gráficos do site fiquem semelhantes aos que foram projetados pelo designer, cuidando de todos os elementos visuais contidos na página e deixando-os totalmente responsivos, ou seja, idependente do tamanho da tela do usuário, o site vai se redimensionar para que assim o usuário consiga ter uma boa experiência de uso.</p>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
-            </section>
 
-            <div class="divider-1"></div>
+            </div>
+        </section>
 
-            <section class="project" id="project">
-                <h3 class="project-title">PROJETOS</h3>
-                <div class="project-gh">
-                    <p class="project-paragraph"> Alguns dos meus projetos você pode conferir no meu repositório do GitHub, basta acessar o link abaixo.</p>
-                    <div class="project-link">
-                        <ul>                          
-                            <li><a href="https://github.com/mqsoares" target="_blank"><button class="button" ><i class="icon-github">    </i>   </i>GITHUB</button></a></li>                            
-                        </ul>
-                    </div>        
+        <div class="divider-2"></div>
+
+        <section class="skkils container-content" id="skills">
+            <h3 class="title">SKILLS</h3>
+            <p class="skkils-paragraph">Aqui estão as tecnologias que tenho contato no momento.</p>
+            <div class="swiper container"> 
+                <div class="skkils-cards swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <blockquote>
+                            <img class="skkils-card-item" src="assets/img/html.png" alt="logo html">
+                            <h3>HTML</h3>
+                            <p>HTML (HyperText Markup Language) "Linguagem de Marcação de Hipertexto". Linguagem de marcação utilizada para produção de páginas na web.</p>
+                        </blockquote>
+                    </div>
+                    <div class="card swiper-slide">
+                        <blockquote>
+                            <img class="skkils-card-item" src="assets/img/css.png" alt="logo css">
+                            <h3>CSS</h3>
+                            <p>CSS (Cascading Style Sheets) Com ele, podemos modificar praticamente tudo dentro do layout (Cores, background, margens, preenchimentos e etc.).</p>
+                            </blockquote>
+                    </div>
+                    <div class="card swiper-slide">
+                        <blockquote>
+                            <img class="skkils-card-item" src="assets/img/js.png" alt="logo javascript">
+                            <h3>JavaScript</h3>
+                            <p>Unindo-se ao HTML e CSS, abrangem praticamente todas as exigências do desenvolvimento de uma página completa, dinâmica e com boa performance.</p>
+                        </blockquote>
+                    </div>
+                    <div class="card swiper-slide">
+                        <blockquote>
+                            <img class="skkils-card-item" src="assets/img/react.png" alt="logo css">
+                            <h3>React</h3>
+                            <p>Biblioteca front-end, seu funcionamento acontece através do que chamamos de componente.<br> <strong>OBS.</strong> Iniciando os estudos nessa "ferramenta".</p>
+                        </blockquote>
+                    </div>
+                    <div class="card swiper-slide">
+                        <blockquote>
+                            <img class="skkils-logos-item" src="assets/img/git.png" alt="logo css">
+                            <h3>Git</h3>
+                            <p>Sistema de Controle de versão. Caso haja algum problema em uma alteração do código-fonte, é possível restaurar a versão anterior de forma fácil e rápida.</p>
+                        </blockquote>
+                    </div>
                 </div>
-                <!-- <p class="project-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio tenetur nostrum dolorem reiciendis cum, porro ab asperiores minus, maxime delectus voluptatibus eius sed doloremque id ea consequuntur? Corrupti, dignissimos.</p> -->
-            </section>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-            <div class="divider-2"></div>
-            
-            <section class="contact" id="contact">
+        <div class="divider-1"></div>
+
+        <section class="project container-content" id="project">
+            <h3 class="title">PROJETOS</h3>
+            <div class="project-gh container">
+                <p class="project-paragraph"> Alguns dos meus projetos você pode conferir no meu repositório do GitHub, basta acessar o link abaixo.</p>
+                <div class="project-link">
+                    <ul>                          
+                        <li><a href="https://github.com/mqsoares" target="_blank"><button class="button" ><i class="icon-github">    </i>   </i>GITHUB</button></a></li>                            
+                    </ul>
+                </div>        
+            </div>            
+        </section>
+
+        <div class="divider-2"></div>
+
+        <section class="contact container-content" id="contact">
+            <div class="container">
                 <h3 class="contact-title">Entre em contato comigo!</h3>                   
                 <div class="contact-container">
                     <div class="contact-text">
@@ -129,17 +136,20 @@
                         </ul>
                     </div>                
                 </div>                
-            </section>
-        </main>
 
-        <footer class="footer">        
-            <div class="footer-text">
-                <p>Todos os direitos reservados - ©2022 MQseraoS .</p>
-                <i class="icon-mobile">    </i>83 99653-2700
-            </div>        
-        </footer>
-        <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
-    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">        
+        <div class="footer-text container">
+            <p>Todos os direitos reservados - ©2022 MQseraoS.</p>
+            <i class="icon-mobile">    </i>83 99653-2700
+        </div>        
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+    
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/script/script.js"></script>
