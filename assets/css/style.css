@@ -243,13 +243,13 @@ i {
     /* text-indent: 3rem; */
 }
 
-.about-paragraph p a {
+.about-write p a {
     color: var(--text-color-second);
     transition: color 0.2s;
     align-items: center;
 }
 
-.about-paragraph p a:hover {
+.about-write p a:hover {
     color: var(--detail-color-second);
 }
 
