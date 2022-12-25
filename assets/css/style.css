@@ -401,12 +401,12 @@ i {
 
 /*====  RESPONSIVE ============================ */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .card blockquote {
         max-height: 28.87rem;
         height: 100%;
     }
-}
+} */
 
 @media (max-width: 880px) {
     .home-title {
@@ -489,12 +489,12 @@ i {
     }
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     .card blockquote {
         max-height: 34.37rem;
         height: 100%;
     }
-}
+} */
 
 @media (max-width: 525px) {
     .home-title {
