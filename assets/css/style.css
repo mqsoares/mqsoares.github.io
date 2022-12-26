@@ -476,6 +476,10 @@ i {
         padding: 0.62rem;
     }
 
+    .home-logos {
+        text-align: center;
+    }
+
     .content-main-written {
         margin-top: 1.25rem;
         align-items: center;
