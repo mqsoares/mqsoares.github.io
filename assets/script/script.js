@@ -1,5 +1,6 @@
-const toggle = document.querySelectorAll('.toggle')
-const nav = document.querySelector('.header-container')
+const toggle = document.querySelectorAll('.toggle');
+const nav = document.querySelector('.header-container');
+const links = document.querySelectorAll('nav ul li a');
 
 for (const element of toggle) {    
     element.addEventListener('click', function() {      
@@ -7,29 +8,27 @@ for (const element of toggle) {
     })
 }
 
-const links = document.querySelectorAll('nav ul li a');
-
 for (const link of links) {
     link.addEventListener('click', function() {
         nav.classList.remove('active');
     })
 }
 
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    setWrapperSize: true,
-    pagination: {
-        el: '.swiper-pagination',
-    },
-    mousewheel: true,
-    keyboard: true,
-    breakpoints: {
-        775: {
-          slidesPerView: 2,
-          setWrapperSize: true
-        }
-    }
-})
+// const swiper = new Swiper('.swiper', {
+//     slidesPerView: 1,
+//     setWrapperSize: true,
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
+//     mousewheel: true,
+//     keyboard: true,
+//     breakpoints: {
+//         775: {
+//           slidesPerView: 2,
+//           setWrapperSize: true
+//         }
+//     }
+// })
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
@@ -41,8 +40,6 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(`
     #home .content-main-image, #home .content-main-written,
     #about .about-title, #about .content-about,
-    #skills .skills-title, #skills .skkils-paragraph, #skills .skkils-cards,
-    #project .project-title, #project .project-gh,
     #contact .contact-title, #contact .contact-text, #contact .contact-links
     `, 
     { interval: 100 }
@@ -82,7 +79,6 @@ function activateMenuAtCurrentSection() {
         }
     }
 }
-
 
 window.addEventListener('scroll', function() {
     backToTop ()
