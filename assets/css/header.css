@@ -1,0 +1,62 @@
+.header {
+    position: fixed;
+    width: 100%;    
+    z-index: 10;
+    backdrop-filter: saturate(180%) blur(5px);
+    /* box-shadow: inset 0 -0.5px 0 0 var(--text-color-second); */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+}
+
+.logo {
+    color: transparent;
+    background: linear-gradient(135deg, var(--detail-color) 0%, var(--detail-color-second) 100%
+      );
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+.logo:hover {
+    opacity: 0.5;
+
+}
+.header-menu ul {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.header-menu-item {
+    font: 400 0.75rem var(--font);
+    color: var(--text-color-second);
+    letter-spacing: 1px;
+    position: relative;
+    padding: 0.75rem;
+    transition: 0.3s ease-in-out;
+}
+
+.header-menu-item:hover {
+    color: var(--text-color);
+    background-color: var(--color-selection);
+    border-radius: 10%;
+}
+
+.header-menu-item.active {
+    font-weight: 700;
+}
+
+.toggle {
+    display: none;
+    color: var(--text-color-second);
+    font-size: var(--text-size-title);
+    cursor: pointer;
+    transition: color 0.2s;
+}
