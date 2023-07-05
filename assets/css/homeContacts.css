@@ -11,6 +11,14 @@
     transition: .3s ease-in-out;
 }
 
+section.home-links-contacts ul.ul-icons-text {
+    padding-bottom: 2rem;
+}
+
+section.home-links-contacts ul.ul-only-icons {
+    display: none;
+}
+
 .home-links-contacts ul li a.github:hover {
     color: #808080;
     font-weight: bold;
@@ -34,4 +42,19 @@
 .home-links-contacts ul li a.gmail:hover {
     color: #db4a39;
     font-weight: bold;
+}
+
+/*====  RESPONSIVE ============================ */
+
+@media (max-width: 768px) {
+  
+    section.home-links-contacts ul.ul-icons-text {
+        display: none;
+    }
+    
+    section.home-links-contacts ul.ul-only-icons {
+        display: flex;
+        color: var(--text-color-second);
+        padding-bottom: 2rem;
+    }
 }

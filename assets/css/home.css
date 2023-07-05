@@ -1,5 +1,5 @@
 .home {
-    /* background-image: url('/assets/img/dev.jpg'); */
+    background-image: url('/assets/img/dev.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -43,4 +43,65 @@
     font-size: 2rem;
     color: var(--text-color-second);
     margin-bottom: 1.0rem;
+}
+
+/*====  RESPONSIVE ============================ */
+
+@media (max-width: 880px) {
+    .home-title {
+        font-size: 3rem;
+    }
+
+    .home-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .content-main-written {
+        margin-top: 1.25rem;
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1.25rem;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-text {
+        height: 95vh;
+    }
+    
+}
+
+@media (max-width: 650px) {
+    .home-text {
+        padding: 0rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .home-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 455px) {
+    .home-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .home-subtitle {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .home-logos {
+        display: flex;
+    }
 }
