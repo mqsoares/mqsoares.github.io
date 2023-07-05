@@ -2,7 +2,7 @@
     position: fixed;
     width: 100%;    
     z-index: 10;
-    backdrop-filter: saturate(180%) blur(5px);
+    /* backdrop-filter: saturate(180%) blur(5px); */
 }
 
 .header-container {
@@ -45,6 +45,14 @@
     color: var(--text-color);
     background-color: var(--color-selection);
     border-radius: 10%;
+}
+
+.header-menu-item.menu-home {
+    font-weight: bold;
+}
+
+.header-menu-item.menu-about {
+    font-weight: bold;
 }
 
 .header-menu-item.down {

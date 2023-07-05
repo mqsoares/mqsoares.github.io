@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Miquéias Soares, Desenvolvedor Web | Front-end">
-    <title>Miquéias Soares - Desenvolvedor Web</title>
-    <link rel="stylesheet" href="assets/fonts/style.css">
+    <title>Sobre mim / Miquéias Soares - Desenvolvedor Web</title>
+    <link rel="stylesheet" href="./../fonts/style.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
-    <link rel="stylesheet" href="./assets/css/homeContacts.css">
+    <link rel="stylesheet" href="./../css/global.css">
+    <link rel="stylesheet" href="./../css/header.css">
+    <link rel="stylesheet" href="./../css/about.css">
+    <link rel="stylesheet" href="./../css/homeContacts.css">
 </head>
 <body>
     <header class="header">
@@ -21,31 +21,33 @@
                 <div class="icon-menu toggle"></div>
                 <div class="icon-close toggle"></div>
                 <ul>
-                    <li><a href="#home" class="header-menu-item menu-home">INÍCIO</a></li>
-                    <li><a href="./assets/views/about.html" class="header-menu-item">SOBRE</a></li>
+                    <li><a href="/index.html" class="header-menu-item">INÍCIO</a></li>
+                    <li><a href="#about" class="header-menu-item menu-about">SOBRE</a></li>
                     <li><a href="#" class="header-menu-item down">DOWNLOAD CV</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="home" id="home">
-        <section class="home-text">
-            <div class="home-written container">
-                <h1 class="home-title">Miquéias Soares</h1>
-                <h2 class="home-subtitle">Desenvolvedor Web</h2>
-                <div class="home-logos">
-                    <img alt="HTML icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-                    <img alt="CSS icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-                    <img alt="Javascript icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-                    <img alt="Vue icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg">
-                    <img alt="React icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg">
-                    <img alt="NodeJS icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg">
-                    <img alt="MySQL icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mysql/mysql-original.svg">
-                    <img alt="Git icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/git/git-original.svg">
+    <main class="about">
+        <section class="about-text">
+            <section class="about container-content" id="about">
+                <h3 class="title">SOBRE MIM</h3> 
+                <div class="container">
+                    <div class="content-about">
+                        <img class="about-image" src="./../img/mq-seraos.jpg" alt="imagem do desenvolver web Miqueias Soares">
+                        <div class="about-write">
+                            <p class="about-paragraph">Graduando em Desenvolvimento Web pela UNOPAR - Universidade Norte do Paraná.</p><br>
+                            <p class="about-paragraph">Movido por aprendizados e desafios, comprometido, dedicado e objetivo, a fim de cooperar com o trabalho em equipe, sempre da melhor maneira possível.</p><br>
+                            <p class="about-paragraph">Experiências adquidas ao longo de dez anos trabalhando com administração de empresas no ramo óptico e alguns anos de barbearia contribuíram diretamente para desenvolvimento e fortalecimento de minhas habilidades pessoais como, resiliência, trabalho em equipe, relacionamento com o cliente e resolução de problemas.</p><br>
+                            <p class="about-paragraph">Você pode conferir alguns projetos no meu <a href="https://github.com/mqsoares" target="_blank"><i class="icon-github"> </i><em><b>GitHub</b> (clicando aqui)</em></a>.</p>                            
+                        </div>
+                    </div>
+    
                 </div>
-            </div>
+            </section>
         </section>
+            
         <section class="home-links-contacts container">
             <ul>
                 <li><a href="https://github.com/mqsoares" target="_blank" class="github"><i class="icon-github"></i> GitHub</a></li>
@@ -66,7 +68,7 @@
                 <i class="icon-twitter"></i>
             </ul>
         </section>
-    </main>            
+    </main>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

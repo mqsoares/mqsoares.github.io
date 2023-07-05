@@ -1,0 +1,37 @@
+.home-links-contacts ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-bottom: 1rem; */
+}
+
+.home-links-contacts ul li a {
+    color: var(--text-color-second);
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+
+.home-links-contacts ul li a.github:hover {
+    color: #808080;
+    font-weight: bold;
+}
+
+.home-links-contacts ul li a.linkdedin:hover {
+    color: #0e76a8;
+    font-weight: bold;
+}
+
+.home-links-contacts ul li a.whatsapp:hover {
+    color: #25D366;
+    font-weight: bold;
+}
+
+.home-links-contacts ul li a.twitter:hover {
+    color: #00acee;
+    font-weight: bold;
+}
+
+.home-links-contacts ul li a.gmail:hover {
+    color: #db4a39;
+    font-weight: bold;
+}
