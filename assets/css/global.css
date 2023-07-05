@@ -84,3 +84,9 @@ i {
     padding-bottom: 2rem;
     text-align: center;
 }
+
+@media (max-width: 455px) {
+    .container {
+        padding: 1.3rem;
+    }
+}

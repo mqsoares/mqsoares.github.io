@@ -59,6 +59,10 @@
     .about-image {
         height: 15.62rem;
     }
+
+    .about-text .title {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 360px) {
