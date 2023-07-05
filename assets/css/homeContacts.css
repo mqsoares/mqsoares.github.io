@@ -55,7 +55,6 @@ section.home-links-contacts ul.ul-only-icons {
     
     section.home-links-contacts ul.ul-only-icons {
         display: flex;
-        color: var(--text-color-second);
-        padding-bottom: 2rem;
+        /* padding-bottom: 2rem; */
     }
 }
