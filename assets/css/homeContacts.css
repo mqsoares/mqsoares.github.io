@@ -1,3 +1,8 @@
+section.home-links-contacts {
+    position: relative;
+    top: -1rem;
+}
+
 .home-links-contacts ul {
     display: flex;
     flex-direction: row;
@@ -9,10 +14,6 @@
     color: var(--text-color-second);
     align-items: center;
     transition: .3s ease-in-out;
-}
-
-section.home-links-contacts ul.ul-icons-text {
-    padding-bottom: 2rem;
 }
 
 section.home-links-contacts ul.ul-only-icons {
