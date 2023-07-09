@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .content-about {
@@ -50,9 +51,9 @@
     .about-image {
         height: 18.75rem;
     }
-    .about-write {
+    /* .about-write {
         margin-bottom: 2.5rem;
-    }
+    } */
 }
 
 @media (max-width: 525px) {
