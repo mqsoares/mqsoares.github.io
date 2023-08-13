@@ -1,46 +1,46 @@
-section.home-links-contacts {
+footer.footer-links-contacts {
     position: relative;
     top: -1rem;
 }
 
-.home-links-contacts ul {
+.footer-links-contacts ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     /* padding-bottom: 1rem; */
 }
 
-.home-links-contacts ul li a {
+.footer-links-contacts ul li a {
     color: var(--text-color-second);
     align-items: center;
     transition: .3s ease-in-out;
 }
 
-section.home-links-contacts ul.ul-only-icons {
+footer.footer-links-contacts ul.ul-only-icons {
     display: none;
 }
 
-.home-links-contacts ul li a.github:hover {
+.footer-links-contacts ul li a.github:hover {
     color: #808080;
     font-weight: bold;
 }
 
-.home-links-contacts ul li a.linkdedin:hover {
+.footer-links-contacts ul li a.linkdedin:hover {
     color: #0e76a8;
     font-weight: bold;
 }
 
-.home-links-contacts ul li a.whatsapp:hover {
+.footer-links-contacts ul li a.whatsapp:hover {
     color: #25D366;
     font-weight: bold;
 }
 
-.home-links-contacts ul li a.twitter:hover {
+.footer-links-contacts ul li a.twitter:hover {
     color: #00acee;
     font-weight: bold;
 }
 
-.home-links-contacts ul li a.gmail:hover {
+.footer-links-contacts ul li a.gmail:hover {
     color: #db4a39;
     font-weight: bold;
 }
@@ -49,11 +49,11 @@ section.home-links-contacts ul.ul-only-icons {
 
 @media (max-width: 768px) {
   
-    section.home-links-contacts ul.ul-icons-text {
+    footer.footer-links-contacts ul.ul-icons-text {
         display: none;
     }
     
-    section.home-links-contacts ul.ul-only-icons {
+    footer.footer-links-contacts ul.ul-only-icons {
         display: flex;
         /* padding-bottom: 2rem; */
     }
