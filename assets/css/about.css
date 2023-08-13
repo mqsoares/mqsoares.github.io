@@ -7,6 +7,15 @@
     padding-bottom: 4rem;
 }
 
+.about-title {
+    font: 400 var(--text-size-title) var(--font);
+    color: var(--text-color);
+    letter-spacing: 2px;
+    -webkit-font-smoothing: auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
 .content-about {
     display: flex;
     align-items: center;
@@ -34,6 +43,11 @@
 
 .about-write p a:hover {
     color: var(--detail-color-second);
+}
+
+.github:hover {
+    color: #808080;
+    font-weight: bold;
 }
 
 /*====  RESPONSIVE ============================ */
