@@ -15,37 +15,23 @@
 :root {
     /* colors */
     --base-color: #0d1117;
-    --base-color-second: #161b22;
-
     --text-color: #e6edf3;
     --text-color-second: #7d8590;
-   
     --color-selection: #262636;
-
-    --detail-color: #66d4ff;
-    --detail-color-second: #ff7c00;
-
-    --gradient-color: linear-gradient(90deg, var(--detail-color) 0%, var(--detail-color-second) 100%);
-    --gradient-color-second: linear-gradient(270deg, var(--detail-color) 0%, var(--detail-color-second) 100%);
-
+    --gradient-color: linear-gradient(135deg, #66d4ff 0%, #ff7c00 100%);
+    
     /* fonts */
     --text-size-title: 1.5rem;
     --text-size: 1rem;
-
     --font: 'Montserrat', sans-serif;
 }
 
 /*===  BASE ============================ */
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font: 400 var(--text-size) var(--font);
     color: var(--text-color);
     background: var(--base-color);
-    -webkit-font-smoothing: antialiased;
 }
 
 h3,
@@ -60,29 +46,6 @@ i {
     width: 100%;
     margin: auto;
     padding: 0px 3.12rem;
-}
-
-.container-content {
-    padding: 6.5rem 0 6.5rem;
-}
-
-.divider-1 {
-    height: 1px;
-    background-image: var(--gradient-color)
-}
-
-.divider-2 {
-    height: 1px;
-    background-image: var(--gradient-color-second)
-}
-
-.title {
-    font: 400 var(--text-size-title) var(--font);
-    color: var(--text-color);
-    letter-spacing: 2px;
-    -webkit-font-smoothing: auto;
-    padding-bottom: 2rem;
-    text-align: center;
 }
 
 @media (max-width: 455px) {
