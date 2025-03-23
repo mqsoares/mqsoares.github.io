@@ -8,7 +8,6 @@
     <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()" />
     <title>Miquéias Soares - Desenvolvedor Web</title>
     <link rel="stylesheet" href="assets/fonts/style.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/home.css">
@@ -17,66 +16,74 @@
 <body>
     <header class="header">
         <nav class="header-container container">
-            <a href="./index.html" class="logo">&lt MQ /&gt</a>
-            <div class="header-menu">
-                <div class="icon-menu toggle"></div>
-                <div class="icon-close toggle"></div>
-                <ul>
-                    <li><a href="#home" class="header-menu-item menu-home">INÍCIO</a></li>
-                    <li><a href="./assets/views/about.html" class="header-menu-item">SOBRE</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/1xW12Z7-K8yZ7JNYOVExKqjHx_rhYdB3x?usp=sharing" class="header-menu-item down" target="_blank">DOWNLOAD CV</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <a href="./index.html" class="header-logo gradient-text">
+                        &lt MQ /&gt
+                    </a>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/drive/folders/1xW12Z7-K8yZ7JNYOVExKqjHx_rhYdB3x?usp=sharing" class="header-download gradient-text" target="_blank">
+                        DOWNLOAD CV
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <main class="home" id="home">
-        <section class="home-text">
+    <div class="home" id="home">
+        <main class="home-text">
             <div class="home-written container">
                 <h1 class="home-title">Miquéias Soares</h1>
-                <div style="display: inline-block;"><h2 class="home-subtitle animation">Desenvolvedor Web</h2></div>
-                <div class="home-logos">
-                    <img align="center" alt="Javascript icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">  
-                    <img align="center" alt="Typescript icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">  
-                    <img align="center" alt="React icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
-                    <img align="center" alt="VueJs icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg">  
-                    <img align="center" alt="Angular icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">  
-                    <img align="center" alt="NodeJS icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">
-                    <img align="center" alt="Java icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg">
-                    <img align="center" alt="Spring icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg">
-                    <img align="center" alt="MySQL icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg">
-                    <img align="center" alt="Git icon" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+                <div style="display: inline-block;">
+                    <h2 class="home-subtitle animation">
+                        Desenvolvedor Web
+                    </h2>
                 </div>
             </div>
-        </section>
+        </main>
     
         <footer class="footer-links-contacts container">
             <ul class="ul-icons-text">
-                <li><a href="https://github.com/mqsoares" target="_blank" class="github"><i class="icon-github"></i> GitHub</a></li>
+                <li>
+                    <a href="https://github.com/mqsoares" target="_blank" class="github">
+                        <i class="icon-github"></i>
+                        <span class="icon-text">
+                            GitHub
+                        </span>
+                    </a>
+                </li>
                 
-                <li><a href="https://www.linkedin.com/in/mq-soares" target="_blank" class="linkdedin"><i class="icon-linkedin"></i> LinkedIn</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/mq-soares" target="_blank" class="linkdedin">
+                        <i class="icon-linkedin"></i>
+                        <span class="icon-text">
+                            LinkedIn
+                        </span>
+                    </a>
+                </li>
                 
-                <li><a href="mailto:mqseraos@gmail.com" target="_blank" class="gmail"><i class="icon-envelop"></i> mqseraos@gmail.com</a></li>
+                <li>
+                    <a href="mailto:mqseraos@gmail.com" target="_blank" class="gmail">
+                        <i class="icon-envelop"></i>
+                        <span class="icon-text">
+                            mqseraos@gmail.com
+                        </span>
+                    </a>
+                </li>
                 
-                <li><a href="https://api.whatsapp.com/send?phone=+5583996532700&text=Oi! Gostaria de saber mais sobre seu trabalho como desenvolvedor." target="_blank" class="whatsapp"><i class="icon-whatsapp"></i> WhatsApp</a></li>
-
-                <li><a href="https://twitter.com/mqsoares" target="_blank" class="twitter"><i class="icon-twitter"></i> Twitter</a></li>
-            </ul>
-            <ul class="ul-only-icons">
-                <li><a href="https://github.com/mqsoares" target="_blank" class="github"><i class="icon-github"></i></a></li>
-                
-                <li><a href="https://www.linkedin.com/in/mq-soares" target="_blank" class="linkdedin"><i class="icon-linkedin"></i></a></li>
-                
-                <li><a href="mailto:mqseraos@gmail.com" target="_blank" class="gmail"><i class="icon-envelop"></i> </a></li>
-                
-                <li><a href="https://api.whatsapp.com/send?phone=+5583996532700&text=Oi! Gostaria de saber mais sobre seu trabalho como desenvolvedor." target="_blank" class="whatsapp"><i class="icon-whatsapp"></i></a></li>
-
-                <li><a href="https://twitter.com/mqsoares" target="_blank" class="twitter"><i class="icon-twitter"></i></a></li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=+5583996532700&text=Oi! Gostaria de saber mais sobre seu trabalho como desenvolvedor." target="_blank" class="whatsapp">
+                        <i class="icon-whatsapp"></i>
+                        <span class="icon-text">
+                            WhatsApp
+                        </span>
+                    </a>
+                </li>
             </ul>
         </footer>
-    </main>
-    
-    <script src="https://unpkg.com/scrollreveal"></script>
+    </div>
+
     <script src="assets/script/script.js"></script>
 </body>
 </html>

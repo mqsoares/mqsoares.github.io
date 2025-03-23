@@ -4,7 +4,7 @@
     z-index: 10;
 }
 
-.header-container {
+.header-container ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,123 +12,28 @@
     height: 4rem;
 }
 
-.logo {
+.gradient-text {
     color: transparent;
     background: var(--gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
+    transition: 0.3s ease-in-out;
+}
+
+.header-logo {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
 }
 
-.logo:hover {
-    color: var(--text-color);
-}
-
-.header-menu ul {
-    display: flex;
-    gap: 0.75rem;
-}
-
-.header-menu-item {
+.header-download {
     font: 400 0.75rem var(--font);
-    color: var(--text-color-second);
     letter-spacing: 1px;
     position: relative;
     padding: 0.75rem;
-    transition: 0.3s ease-in-out;
 }
 
-.header-menu-item:hover {
+.header-logo:hover,
+.header-download:hover {
     color: var(--text-color);
-    background-color: var(--color-selection);
-    border-radius: 10%;
-}
-
-.header-menu-item.menu-home {
-    font-weight: bold;
-}
-
-.header-menu-item.menu-about {
-    font-weight: bold;
-}
-
-.header-menu-item.down {
-    font: 400 0.75rem var(--font);
-    letter-spacing: 1px;
-    color: transparent;
-    background: var(--gradient-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    position: relative;
-    padding: 0.75rem;
-    transition: 0.3s ease-in-out;
-}
-
-.header-menu-item.down:hover {
-    color: var(--text-color);
-}
-
-.toggle {
-    display: none;
-    color: var(--text-color-second);
-    font-size: var(--text-size-title);
-}
-
-/*====  RESPONSIVE ============================ */
-
-@media (max-width: 800px) {
-    .header {
-        backdrop-filter: saturate(180%) blur(5px);
-    }
-
-    .header-menu-item::after {
-        height: 2px;
-        bottom: -8px;
-    }
-
-    .icon-menu.toggle {
-        display: block;
-    }
-    
-    .header-container.active .icon-close.toggle {
-        display: block;
-    } 
-
-    .header-container.active .icon-menu.toggle {
-        display: none;
-    }
-
-    nav .icon-close {
-        display: none;
-        position: relative;
-        z-index: 1;
-    }
-
-    .header-menu ul {
-        display: none;
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        top: 0;
-        left: 0;
-        background-color: var(--base-color);
-    }
-
-    .header-container.active .header-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 3rem;
-        place-content: center;
-    }
-
-    .header-menu-item {
-        font-weight: 400;
-        font-size: 1.25rem;
-        letter-spacing: 2px;
-        padding: 0.62rem;
-    }
 }

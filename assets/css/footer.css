@@ -16,45 +16,37 @@ footer.footer-links-contacts {
     transition: .3s ease-in-out;
 }
 
-footer.footer-links-contacts ul.ul-only-icons {
-    display: none;
-}
-
 .footer-links-contacts ul li a.github:hover {
     color: #808080;
-    font-weight: bold;
 }
 
 .footer-links-contacts ul li a.linkdedin:hover {
     color: #0e76a8;
-    font-weight: bold;
 }
 
 .footer-links-contacts ul li a.whatsapp:hover {
     color: #25D366;
-    font-weight: bold;
-}
-
-.footer-links-contacts ul li a.twitter:hover {
-    color: #00acee;
-    font-weight: bold;
 }
 
 .footer-links-contacts ul li a.gmail:hover {
     color: #db4a39;
-    font-weight: bold;
+}
+
+a .icon-text {
+    font-family: var(--font) !important;
+}
+
+a .icon-text:hover {
+    font-weight: 600;
+
 }
 
 /*====  RESPONSIVE ============================ */
 
 @media (max-width: 768px) {
   
-    footer.footer-links-contacts ul.ul-icons-text {
+    footer.footer-links-contacts ul li a span.icon-text {
         display: none;
     }
-    
-    footer.footer-links-contacts ul.ul-only-icons {
-        display: flex;
-        /* padding-bottom: 2rem; */
-    }
+
 }
